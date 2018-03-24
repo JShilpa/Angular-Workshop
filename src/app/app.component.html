@@ -1,1 +1,69 @@
-Hello, World.
+<!-- <div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<h4>1) I am component within a component example</h4>
+			<app-header> </app-header>
+			<app-sub-header> </app-sub-header>
+		</div>
+		<hr>
+		<div class="col-md-12">
+			<h4>2) I am string interpolation example</h4>
+			<app-string-interpolation-ex> </app-string-interpolation-ex>
+		</div>
+		<hr>
+		<div class="col-md-12">
+			<h4>3) I am property binding example</h4>
+			<app-property-binding-ex> </app-property-binding-ex>
+		</div>
+		<hr>
+		<div class="col-md-12">
+			<h4>3) I am event binding example</h4>
+			<app-event-binding> </app-event-binding>
+		</div>
+		<hr>
+		<div class="col-md-12">
+			<h4>3) I am two-way data binding example</h4>
+			<app-two-way-binding> </app-two-way-binding>
+		</div>
+		<hr>
+
+		
+	</div>
+
+
+ -->
+
+
+ <div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <ul class="nav nav-tabs">
+        <li role="presentation"
+            routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+          <a routerLink="/">Example Of Component Within A Component</a>
+        </li>
+        <li role="presentation"
+            routerLinkActive="active">
+          <a routerLink="strings">String Interpolation</a>
+        </li>
+        <li role="presentation"
+            routerLinkActive="active">
+          <a routerLink="property">Property Binding</a>
+        </li>
+            <li role="presentation"
+            routerLinkActive="active">
+          <a routerLink="event">Event Binding</a>
+        </li>
+         <li role="presentation"
+            routerLinkActive="active">
+          <a routerLink="two-way">Two Way Data Binding</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

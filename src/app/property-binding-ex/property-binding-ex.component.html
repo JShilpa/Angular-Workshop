@@ -1,0 +1,21 @@
+<div class="row">
+	<div class="col-md-12">
+		<h4>I am a disabled button whose wings are chipped by HTML disabled attribute
+		</h4>
+		<button class="btn btn-info disabled">I am disabled Forever</button>
+
+		<hr>
+		<p>Time to help him out. Watch the magic. Look closely to the below button and within 3 seconds this button will get his wings </p>
+
+		<p>Is the button still locked? </p>
+
+		<p><strong> {{ locked }} </strong> 
+
+		</p>
+		<button class="btn btn-info" [disabled]="locked">
+			Button
+		</button>
+
+
+	</div>
+</div>
